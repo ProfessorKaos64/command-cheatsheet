@@ -12,3 +12,15 @@ Sourec: http://serverfault.com/a/137848
 ```
 sed '\:// START TEXT:,\:// END TEXT:d' file
 ```
+
+# Appending text
+***
+
+## Append line after match
+```
+sed  '/\[option\]/a Hello World' input
+```
+## Insert line before match
+```
+sed  '/\[option\]/i Hello World' input
+```
